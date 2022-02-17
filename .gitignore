@@ -85,3 +85,6 @@ target/
 
 # Automake macro and config cache.
 /autom4te.cache/
+
+# Other autotools files.
+/config.h.in~
