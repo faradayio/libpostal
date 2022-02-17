@@ -10,6 +10,10 @@ AC_INIT([libpostal], LIBPOSTAL_MAJOR_VERSION.LIBPOSTAL_MINOR_VERSION.LIBPOSTAL_P
 AC_CONFIG_MACRO_DIR([m4])
 
 AM_INIT_AUTOMAKE([foreign subdir-objects])
+# [RUST] Allow disabling AM_MAINTAINER_MODE. When it's enabled,
+# automake-generated Makefiles may try to modify the source tree, which is
+# strictly forbidden by 'cargo publish'.
+AM_MAINTAINER_MODE()
 AC_CONFIG_SRCDIR([src])
 LT_INIT([shared])
 

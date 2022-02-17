@@ -82,3 +82,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Automake macro and config cache.
+/autom4te.cache/
